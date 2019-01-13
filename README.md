@@ -1,4 +1,4 @@
-# Team-TimeLimitExeeded
+# Team-TimeLimitExeeded 😏 
 (Archit Agrawal,Nikunj Singhal, Shubham Mittal
 
 
@@ -10,7 +10,7 @@ This software helps in automatically sending the posts to different colleges gro
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
+### Prerequisites 😇😇😇
 
 Python3
 pip
@@ -18,7 +18,7 @@ Some packages of python3 listed in requirements.txt
 
 
 
-### Installing
+### Installing    📥📥📥
 
 
 To install all the dependencies just run this command on you bash or cmd
@@ -27,17 +27,16 @@ To install all the dependencies just run this command on you bash or cmd
 pip3 install -r requirements.txt 
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
 
 
 
-## Authors
+## Authors  😎😎😎
 
 * **Nikunj Singhal**  - [Github](https://github.com/PurpleBooth)
 * **Archit Agrawal**  - [Github](https://github.com/PurpleBooth)
 * **Shubham Mittal**  - [GitHub](https://github.com/PurpleBooth)
 
-## Acknowledgments
+## Acknowledgments 💘💘💘
 
 * Mentors
 * Google
