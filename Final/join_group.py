@@ -49,7 +49,7 @@ old_height = 0
 
 
 
-def findNewGroups(keyWord, state="Delhi"):  
+def findNewGroups(keyWord='art', state="Delhi"):  
     '''
     made some changes here
     '''  
@@ -60,6 +60,8 @@ def findNewGroups(keyWord, state="Delhi"):
         try:
             listOfJoinLinks[i].click()
         except:
+            driver.find_element_by_class_name("_20-e").click()
+            driver.find_element_by_link_text("Leave this page").click()
             continue    
 
 
@@ -153,8 +155,8 @@ def login(email, password):
     
     
     
-    
-    findNewGroups("sports")
+    aaa=input("Please enter the genre of group:  ")
+    findNewGroups(aaa)
     
 
     '''

@@ -42,14 +42,14 @@ old_height = 0
 
 #def get_list_of_groups(info):
 #to do string parsing
-
+'''
 def transfer_pending_groups(still_pending):
     f2=open("pending.txt","w")
     for i in still_pending:
-        f2.write(i+"/n")
+        f2.write(i+"\n")
     f2.close()
-        
-
+       
+'''
 
 def find_in_file(list_of_current):
     '''
@@ -74,7 +74,7 @@ def find_in_file(list_of_current):
 
         i=i+3
         f1.close()
-        transfer_pending_groups(still_pending)
+        #transfer_pending_groups(still_pending)
 
 def get_current_groups():
     '''
@@ -99,8 +99,8 @@ def main():
 
     if len(ids) > 0:
         # Getting email and password from user to login into his/her profile
-        email = 'aayan.agrawal1919@gmail.com'
-        password = '9818962189'
+        email = 'aaruuraa91@gmail.com'
+        password = '9999975654'
         #getpass.getpass('Enter your Facebook Password: ')
 
         print("\nStarting Scraping...")

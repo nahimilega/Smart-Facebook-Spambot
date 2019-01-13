@@ -16,48 +16,42 @@ from time import sleep
 
 def MAIN():
     driver =webdriver.Chrome()
-    def upload():
-            link="https://www.facebook.com/groups/390195291754122/"
-            driver.get(link)
+    def upload(link="https://www.facebook.com/groups/390195291754122/"):
+            
+            
             file = open("myfile.txt", "r")
             description=file.readline()
+             
+            driver.get(link)
             
+            print(description)
             driver.find_element_by_name('xhpc_message_text').send_keys(description)
-            path=file.readline()
-            
-            
-            driver.find_element_by_xpath("/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]/span[1]/span[1]").send_keys(path)
+            imageToBeUploadedPath = "C:\\Users\\Archit\\Desktop\\timetable.png"
+            print(imageToBeUploadedPath)
             sleep(5)
+            try:
+                elem = driver.find_element_by_link_text("Add photo/video")
+                sleep(5)
+                elem.click()
+                sleep(2)
+                elem = driver.find_element_by_link_text("Upload Photos/Videos")
+                sleep(2)
+                elem.find_element_by_xpath("..").find_elements_by_tag_name("div")[1].find_element_by_tag_name("input").send_keys(imageToBeUploadedPath)
+                driver.implicitly_wait(10)
+                elem = driver.find_element_by_xpath('//span[contains(text(), "Post")]')
+                driver.implicitly_wait(10)
+                elem1 = elem.find_element_by_xpath("..")
+                id = elem1.get_attribute("id")
+                sleep(5)
+                elem = driver.find_element_by_link_text("Share")
+            except:
+                pass
             #elem = driver.find_element_by_link_text("Share")
 
 
 
-    def findNewGroups(keyWord, state="Delhi"):    
-        driver.get("https://www.facebook.com/search/groups/?q={} {}&epa=SERP_TAB".format(state, keyWord))
-        listOfJoinLinks = driver.find_elements_by_link_text("Join")
-        for i in range(5):
-            sleep(5)
-            listOfJoinLinks[i].click()
-    def find_art_Groups_of_school():
-        f5=open("college_of_potential_users.txt","r")
-        lines = f5.read().split("\n")
-        for i in lines:
-            findNewGroups(i+"art")
 
-    def find_dance_Groups_of_school():
-        f5=open("college_of_potential_users.txt","r")
-        lines = f5.read().split("\n")
-        for i in lines:
-            findNewGroups(i+"dance")        
-
-    def find_generic_Groups_of_school():
-        f5=open("college_of_potential_users.txt","r")
-        lines = f5.read().split("\n")
-        for i in lines:
-            findNewGroups(i,"")
-
-
-    def login(user = "aayan.agarwal1919@gmail.com", pwd = "9818962189"):
+    def login(user = "aaruuraa91@gmail.com", pwd = "9999975654"):
         driver.get("http://www.facebook.com")
         assert "Facebook" in driver.title
         
@@ -71,15 +65,20 @@ def MAIN():
         elem.send_keys(pwd)
         elem.send_keys(Keys.RETURN)
         upload()
+        
+        
+            
+         
         sleep(5)
 
 
-    #findNewGroups("sports")
-    def post(content = "test content", link = "https://www.facebook.com/groups/1569538110008193/?fref=nf"):
-        driver.get(link)
-        driver.find_element_
-        sleep(5)
 
+
+
+
+
+    
+    
 
 
 
