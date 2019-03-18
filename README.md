@@ -7,11 +7,16 @@ This software helps in automatically sending the posts to different colleges gro
 
 
 
+
 Check if the group has accepted the group update.
 Has a name suggest.
 Analyse the post.
 Finds the user who have liked the previous posts and then find their respective colleges and school.
 Join Group as the name suggest.We have to input the genre of the group.
+
+
+# Motivation 
+Whenever there is an event or some college fest, to promote their event and make its presence online usually organisers ask students to post it on their facebook. Basically tell students to spam of the groups and friends and give awards to people whose account gets blocked by over spamming.This is really inefficient way to doing stuff, hence this motivated us to make smart bot which will do this whole thing automatically and perhaps in a better way.
 
 
 ## What do each file do
@@ -31,7 +36,7 @@ Python3<br />
 
 pip3<br />
 
-Some packages of python3 listed in requirements.txt/n
+Some packages of python3 listed in requirements.txt<br/>
 
 
 
