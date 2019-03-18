@@ -92,8 +92,9 @@ def main():
 
     if len(ids) > 0:
         # Getting email and password from user to login into his/her profile
-        email = 'aaruuraa91@gmail.com'
-        password = '9999975654'
+        email = '<your-email>'
+        password = '<your-password>'
+
         #getpass.getpass('Enter your Facebook Password: ')
 
         print("\nStarting Scraping...")

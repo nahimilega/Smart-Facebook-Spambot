@@ -51,7 +51,7 @@ def MAIN():
 
 
 
-    def login(user = "aaruuraa91@gmail.com", pwd = "9999975654"):
+    def login(user = "<your-email>", pwd = "<your-password>"):
         driver.get("http://www.facebook.com")
         assert "Facebook" in driver.title
         
