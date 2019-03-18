@@ -74,7 +74,7 @@ def find_in_file(list_of_current):
 
         i=i+3
         f1.close()
-        #transfer_pending_groups(still_pending)
+        #ytransfer_pending_groups(still_pending)
 
 def get_current_groups():
     '''
