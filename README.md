@@ -3,16 +3,19 @@
 
 
 # Smart Facebook Spammer 
-This software helps in automatically sending the posts to different colleges groups based on several searching and filtering algorithms without geting being spammed by the Facebook. It is very helpful in publicising the college fests and events which saves a lot of work of the organizers.
+This software helps in automatically sending the posts to different colleges groups based on several searching and filtering algorithms. It is very helpful in publicising the college fests and events which saves a lot of work of the organizers.
+
+
+This bot first joins the group related to different areas(like dance,coding etc). Then post event posters on the groups related to that event and then moniter the post(To know what all it monitor and collect data read the section __What makes it smart__) . 
 
 
 
 
-Check if the group has accepted the group update.
-Has a name suggest.
-Analyse the post.
-Finds the user who have liked the previous posts and then find their respective colleges and school.
-Join Group as the name suggest.We have to input the genre of the group.
+# What makes this bot smart
+The part that makes this bot special is its *monitoring and analyzing the post*. <br/>
+After the making a post in a group, it check the poeple __who all liked the post or are intrested in going to the event__.
+This this bot goes tho the facebook profile of those users who have liked or shown intrest in the post and then ***scrapes their details(like their school, their college etc)*** and then based on that data ***join the groups of those schools and colleges*** and hence __keeps on expanding its reach__. 
+
 
 
 # Motivation 
