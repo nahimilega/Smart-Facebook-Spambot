@@ -65,9 +65,12 @@ Run join_group.py to search and join new groups based on previous analyses and t
 To check it the request sent to the groups to join is approved or not you have to run check_if_group_has_accepted_group_update.py to find the same and update it in the .txt file.
 ## Authors  😎😎😎
 
-* **Nikunj Singhal**  - [Github](https://github.com/00NoisyMime00)
 * **Archit Agrawal**  - [Github](https://github.com/nahimilega)
+* **Nikunj Singhal**  - [Github](https://github.com/00NoisyMime00)
 * **Shubham Mittal**  - [GitHub](https://github.com/shubhammittal05032000)
+
+## To Do
+Add a feature to parse xcel file to collect data after the fest and improve the bot using analysis maybe regression
 
 ## Acknowledgments 💘💘💘
 
